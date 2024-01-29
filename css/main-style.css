@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Manrope&family=Style+Script&display=swap');
+body
+{
+	background-color:#dedede;
+	color:#524F2A;
+	font-family:'Manrope',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	margin: 0 
+	
+	}
+h1, h2
+{
+	font-family: Lora, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: #D79B06
+}
+h1{ font-size: 3vw}
+h2{ font-size: 2.5rem}
+h3{font-size:20px; color:#c5a25d; margin:5px;
+}
+.fontscript
+{
+	font-family: 'Style Script', cursive;
+	font-size: 2rem
+}
+.container{	width: 80%; margin: auto}
+*{ box-sizing: border-box}
+.row { display: flex; flex-wrap: wrap}
+.col-1 { width:8.33%}
+.col-2{ width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6 { width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px solid red
+}
+.img-100 { width: 100%; height: auto}
+.text-yellow {color:#fd900}
+.justify-between{justify-content:space-between}
+.justify-between{ justify-content: center }
+.justify-between{justify-content: flex-end}
+.justify-between{justify-content: end}
+section{padding:100px 0}
+.text-center  {text-align:center }
+.text-high {text-align: right }
+#muc-tieu
+{
+	background-image: url("../IMG/bg-mtieu.jpg");
+	min-height: 600px; 
+	background-position: center top;
+	color: white;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+#muc-tieu h2, #muc-tieu h1 {color:white}
+.card-overlay{position: relative} /*tao quan he voi box con de box con dat vi tri theo dien tich cua box me*/
+.card-overlay h4{position: absolute; 
+	background: #333;
+	color: #fff;
+	left:-250px; bottom: 90px;
+	padding: 5px 20px;
+	overflow: hidden;
+
+
+}
+.card-overlay h5{position: absolute; 
+	background: #333; 
+	color: #fff;
+	left:15px; bottom: 0px;
+	padding: 5px 20px}
+
+
+
+.card-overlay img ,
+.card-overlay h4,
+.card-overlay h5,
+{
+	transition: all 1s
+}
+.card-overlay:hover>img{
+	transform:scale(1.2) rotate(5deg)
+}
+.card-overlay:hover h4
+
+.card-overlay:hover h5
+
+#khuyen-mai
+{
+	background: rgb(246,5,5);
+background: linear-gradient(180deg, rgba(246,5,5,1) 7%, rgba(255,255,255,1) 48%, rgba(0,219,255,1) 92%);
+}
+.card{position: relative}
+.card p a {trasition: all 0.5; opacity:0; text-decoration: none;color:#222}
+.card p a span { transition: all 0.5; position: absolute; left: 45%}
+.card:hover>a{opacity: 1}
+.card:hover> p a span{position: absolute; left: 60%}
+/*menu toi style o day*/
+header .container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	
+}
+.menu ul{position: relative;
+perspective: 250px;}
+.menu ul li a
+{
+	color: #243024;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	display: block;
+	font-weight: 600;
+	font-size: 18px;
+	transition: all 0.5s
+}
+.menu ul li a:hover
+{
+	color: #B4BB6B;
+}
+/*menu ul
+{
+	display: block;
+	background: #fff;
+	box-shadow: 0 5px 5px rgba(200,200,200,0.5);
+	position: absolute;
+	width: 250px;
+	left: 0;
+	top: 200%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5;
+	
+}
+.menuul li:hover>ul{
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+*/
+.menu ul ul
+{
+	
+	display: block;
+	backface-visibility: #ddd;
+	box-shadow: 0 5px 5px rgba(200,200,200,0.5);
+	position: absolute;
+	width: 250px;
+	left: 0;top:100%;
+	transform-origin: center top;
+	transform-style: preserve-3d;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s;
+}
+.menu ul li:hover>ul{
+	transform: rotateX(0deg);
+	opacity: 1;
+	visibility: visible;
+}
+a.td-vung{color: black; text-decoration: none}
+a.td.vung:hover{color: tomato}
+.position-relative{position: relative}
+#gioi-thieu .vtron
+{position: absolute;
+left: -25%; bottom: 10%}
+
+#BANCHAY .san-pham{overflow: hidden}
+#BANCHAY .san-pham a img{transform-style: all 0.5s}
+#BANCHAY .san-pham:hover>a img{transform: scale(1.1)}
+
+.btn-primary{
+	background-color: #B4BB6B; color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn-primary:hover{background-color: #547445;}
+
+
+
+
+
+
+
+
+
+
